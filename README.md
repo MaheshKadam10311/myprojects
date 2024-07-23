@@ -4,7 +4,15 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Web Developer , Programmer
 --------------------------
 
-Welcome to my Github profile , My journey in web development is driven by a belief that great things are built by combining innovative ideas with practical solutions with a passion for creativity and efficiency. MyProjects : Refer /myprojects repository 1. My Portfolio Website - a creative frontend design of My Personal Portfolio Website created Using HTML and CSS. Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app 2. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution. Hoisted Site (Netlify) : https://netflix-frontend-design.netlify.app/ 3. Talk To Your Database- With The Help Of OpenAI Chat GPT and Telegram bot this project makes your communication with your database super easy.
+Welcome to my Github profile , My journey in web development is driven by a belief that great things are built by combining innovative ideas with practical solutions with a passion for creativity and efficiency. MyProjects : Refer /myprojects repository 
+
+1. My Portfolio Website - a creative frontend design of My Personal Portfolio Website created Using HTML and CSS.
+    Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app
+
+ 2. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution.
+    Hoisted Site (Netlify) : https://netflix- frontend-design.netlify.app/
+
+ 4. Talk To Your Database- With The Help Of OpenAI Chat GPT and Telegram bot this project makes your communication with your database super easy.
 
 * 🌍  I'm based in India
 * ✉️  You can contact me at [maheshkadam10311@gmail.com](mailto:maheshkadam10311@gmail.com)
