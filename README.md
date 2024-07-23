@@ -10,7 +10,7 @@ Welcome to my Github profile , My journey in web development is driven by a beli
     Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app
 
  2. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution.
-    Hoisted Site (Netlify) : https://netflix- frontend-design.netlify.app/
+    Hoisted Site (Netlify) : [https://netflix- frontend-design.netlify.app/](https://netflixfrontenddesign.netlify.app/)
 
  4. Talk To Your Database- With The Help Of OpenAI Chat GPT and Telegram bot this project makes your communication with your database super easy.
 
