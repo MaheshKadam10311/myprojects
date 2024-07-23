@@ -1,0 +1,978 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    height:500vh;
+    width:100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+   
+ 
+
+}
+
+/* Header & Navigation Bar Styling */
+
+#mk{
+
+    padding: 5px;
+    margin-left: 5px;
+   
+    
+}
+
+#mk::after{
+
+    content: 'Kadam';
+    color:whitesmoke;
+}
+
+header{
+
+    display: flex;
+    width:100vw;
+    height: 7vh;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(32, 30, 30);
+    color: #9acd32;
+    box-shadow: 0px 0px 20px yellowgreen;
+    position:fixed;
+    z-index: 100;
+    top:0;
+    left:0;
+
+}
+
+.links{
+
+    text-decoration: none;
+    color: #9acd32;
+}
+
+.links:hover{
+
+     color: whitesmoke;
+
+}
+
+
+ul{
+
+    display: flex;
+    justify-content: center;
+    width: 1005px;
+    color: yellowgreen;
+}
+
+.li{
+
+    margin:10px 15px 15px 15px;
+  
+}
+
+.toggle{
+    
+    display: flex;
+    align-items: center;
+    height:25px;
+    width: 55px;
+    background-color: rgb(53, 49, 49);
+    border-radius: 5%;
+    padding: 2px 2px 2px 2px;
+    margin-top: 5px;
+    
+}
+
+#night{
+
+    height:17px;
+    width:17px;
+   margin-right: 5px;
+}
+
+#day{
+
+    height:22px;
+    width:22px;
+    margin-left: 2px;
+    
+}
+
+.nightcolor{
+
+    height: 25px;
+    width:30px;
+    background-color: rgb(36, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#mah{
+
+    color: #9acd32;
+}
+
+main{
+
+    margin-top:100px;
+}
+
+/* Home Page */
+
+.home{
+
+
+     min-height: 100vh;
+     width:100vw;
+     display: flex;
+  }
+
+.some{
+
+
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+.some:hover{
+
+    height: 35px;
+    width:35px ;
+    
+}
+
+.information{
+
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 700px;
+   height: 600px;
+
+}
+
+#hhh{
+   
+    font-size: 50px;
+    transition: all 2ms ease-in;
+    cursor:default;
+
+}
+
+#hhh:hover{
+
+    font-size:55px;
+}
+
+.info{
+
+    font-size: small;
+    cursor:default;
+    color: #9acd32;
+    width: 420px;
+    text-align: center;
+}
+
+
+.downloadres{
+
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #9acd32;
+    padding: 5px 5px 5px 5px;
+    border:1px solid black;
+    font-weight: bold;
+   }
+
+.downloadres:hover{
+
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 5px 5px 15px yellowgreen;
+}   
+
+.img-box{
+
+    width:45%;
+    height:80%;
+    position:absolute;
+    bottom: 0;
+    right:100px;
+
+}
+
+.img-box img{
+
+    height:100%;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+
+.img-box:hover .back-img{
+
+     bottom: 40px;
+}
+
+.img-box:hover .main-img{
+
+    left:54%;
+}
+
+/* About Me Section */
+
+.aboutme{
+
+    min-height: 100vh;
+    width:100vw;
+    display: flex;
+    margin-top: 40px;
+
+}
+
+
+.abtmepic{
+
+    width:500px;
+    height:500px;
+    margin:20px 60px 20px 20px;
+    transition: all 2s linear;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.abtmepic:hover{
+
+    transform: translateX(50px);
+}
+
+.abmecontent{
+
+    position: relative;
+    height: 450px;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    margin:30px 20px 20px 20px;
+
+}
+
+#abmecontent{
+
+    font-size: 45px;
+}
+
+#abmecontent:hover{
+
+    font-size:50px;
+    transition: all 2ms ease-in;
+    cursor:default;
+}
+
+#abmecontent::after{
+
+    content: "Me";
+    color: #9acd32;
+
+}
+
+#abmecontentl1{
+
+    font-size: 15px;
+    color: #9acd32;
+    font-weight: 500;
+    
+}
+
+.abme2{
+
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.abme2:hover{
+
+   color: #9acd32;
+}
+
+.abme3{
+
+    text-align: center;
+    font-weight: 500;
+    color: #9acd32;
+}
+
+/* My Skills Section */
+
+.skills{
+
+ 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#myskills{
+
+    margin: 20px 20px 20px 20px;
+    font-size: 40px;
+}
+
+#myskills::after{
+ 
+   content: 'Skills';
+   color: #9acd32;
+}
+
+#myskills:hover{
+
+    font-size: 45px;
+}
+
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: yellowgreen;
+    margin: 0 15px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.container:hover{
+
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #272525;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.css{
+    width: 70%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 0.2s;
+}
+.skill-per.nodejs{
+    width: 30%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.teamwork{
+    width: 90%;
+    animation-delay: 0.3s;
+}
+
+.skill-per.ps{
+    width: 80%;
+    animation-delay: 0.2s;
+}
+
+.skill-per.commun{
+    width: 80%;
+    animation-delay: 0.1s;
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #272525;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #272525;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/* Project Section */
+
+
+
+.proj{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top:100px;
+}
+
+#myprotitle{
+
+    font-size: 40px;
+    margin: 20px 20px 40px 20px;
+}
+
+#myprotitle::after{
+
+    content: "Projects";
+    color: #9acd32;
+}
+
+#myprotitle:hover{
+
+    font-size: 45px;
+}
+
+
+.projects{
+
+    width: 100vw;
+    height:100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "box1 box2 box3"
+    "box4 box5 box6";
+    gap: 5%;
+}
+
+
+
+.box{
+
+         border:2px solid black;
+         background-color: yellowgreen;
+         margin: 20px;
+         height: 350px;
+         width: 290px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 20px 20px 20px 20px;
+         text-decoration: none;
+         color: #272525;
+         text-align: center;
+         font-weight: 400;
+         box-shadow: 10px 10px 10px  #272525;
+         border-radius: 7%;
+            
+       
+        
+}
+
+
+.box:hover{
+
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 10px 10px 15px yellowgreen;
+}
+
+.projectpics{
+
+    height: 170px;
+    width: 270px;
+    box-shadow: 2px 2px 5px black;
+    border: 2px solid black;
+   
+   
+}
+
+.projectname{
+
+    font-size: 15px;
+    margin: 20px 10px 20px 10px;
+    font-weight: 700;
+    
+}
+
+
+#box1{
+
+    grid-area: "box1";
+}
+
+#box2{
+
+
+    grid-area: "box1";
+}
+#box3{
+
+    grid-area: "box1";
+}
+
+#box4{
+
+    grid-area: "box1";
+}
+
+#box5{
+
+    grid-area: "box1";
+}
+
+#box6{
+
+    grid-area: "box1";
+}
+
+
+/* Certification Section */
+
+
+.certifications{
+    
+    margin-top: 300px;
+    height: 100vh;
+    width:100vw ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#certihead{
+
+    font-size: 40px;
+}
+
+#certihead::after{
+
+    content:"Certifications";
+    color:#9acd32
+}
+
+#certihead:hover{
+
+    font-size: 45px;
+}
+
+
+.imgs{
+
+    height: 100px;
+    width:100px;
+}
+
+.certi0{
+
+    display: flex;
+    margin:30px 30px 30px 30px;
+}
+
+.certi{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 370px;
+    text-align:center;
+    border: 2px solid black;
+    margin: 15px 15px 15px 15px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 15px yellowgreen;
+    color: whitesmoke;
+    background-color: #272525;
+    padding:10px 10px 10px 10px;
+}
+
+.certi:hover{
+
+    color:black;
+    background-color: whitesmoke;
+}
+
+
+/* Contact Us Section */
+
+
+.contactus{
+
+
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containercon{
+
+
+    width: 60%;
+    height: 400px;
+    background-color: #272525;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 5px 5px 10px yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topic-text{
+
+    font-size: 40px;
+    margin: 20px 20px 20px 20px;
+}
+
+.topic-text::after{
+
+    content: "Us";
+    color: #9acd32;
+}
+
+.topic-text:hover{
+
+    font-size: 45px;
+}
+
+#content7{
+
+    font-weight: 600;
+    color: whitesmoke;
+    margin:5px 5px 5px 5px;
+    font-size: 17px;
+}
+
+
+.input-box{
+
+    margin: 20px 10px 10px 10px;
+     height: 40px;
+     width:700px;
+     padding:2px 2px 2px 2px;
+     background-color: rgb(61, 53, 53);
+     color: whitesmoke;
+     outline: none;
+}
+
+.input-box:focus{
+
+    border:2px solid yellowgreen;
+}
+
+.entermess{
+
+    margin: 20px 10px 10px 10px;
+    padding:2px 2px 2px 2px;
+    height: 80px;
+    width:700px;
+    background-color: rgb(61, 53, 53);
+    color: whitesmoke;
+    outline: none;
+}
+
+.entermess:focus{
+
+    border:3px solid yellowgreen;
+}
+
+.button{
+    
+
+    height: 40px;
+    width:90px;
+    margin-top:20px;
+    background-color: #9acd32;
+    border:none;
+    font-weight: 450;
+    box-shadow:2px 2px 5px black;
+    border-radius: 5%;
+    padding: 2px 2px 2px 2px;
+
+}
+
+.button:hover{
+
+    background-color: whitesmoke;
+}
+
+/* Footer Section */
+
+footer{
+
+    display: flex;
+    height:70px;
+    width:100vw;
+    background-color: rgb(32, 30, 30);
+    color: #9acd32;
+    justify-content: center;
+    align-items: center;
+    padding:20px 20px 20px 20px;
+    box-shadow:-5px -5px 15px yellowgreen;
+    
+}
+
+.img6{
+
+
+    height: 30px;
+    width:30px;
+    margin:10px 10px 10px 10px;
+}
+
+.cpyrt{
+
+    margin:10px 10px 10px 10px;
+    font-weight: 500;
+}
+
+
+/* Media Qerries */
+
+@media(max-width:768px) {
+    
+
+   header{
+
+     width: 1000px;
+   }
+    
+    ul{
+
+        display: none;
+    }
+
+    .toggle{
+
+      margin-left: 600px;
+    }
+
+    .img-box{
+
+        width:30%;
+        height:50%;
+        position:absolute;
+        bottom: 0;
+        right:100px;
+    
+    }
+    
+    .img-box img{
+    
+        height:100%;
+        position:absolute;
+        left:50%;
+        bottom:0;
+        transform:translateX(-50%);
+        transition: bottom 1s,left 1s;
+    }
+    
+    .img-box:hover .back-img{
+    
+         bottom: 40px;
+    }
+    
+    .img-box:hover .main-img{
+    
+        left:54%;
+    }
+
+    .abtmepic{
+
+
+        height: 400px;
+        width:350px;
+    }
+
+    .skills{
+
+        width:950px;
+        margin-top: 0;
+    }
+
+    .projects{
+
+        display:flex;
+        flex-direction: column;
+
+    }
+
+
+    .proj{
+
+        margin-top:500px ;
+        width: 950px;
+    }
+ 
+
+    .certifications{
+        
+        margin-top: 1000px;
+        width:950px;
+    
+    }
+
+    .certi0{
+
+        flex-direction: column;
+    }
+
+    .input-box{
+
+        width: 400px;
+    }
+    
+    .entermess{
+
+        width: 400px;
+    }
+
+    .contactus{
+
+        width: 950px;
+        margin-top: 200px;
+    }
+
+    .footer{
+
+        width: 1000px;
+    }
+
+    .aboutme{
+
+        margin-top: 200px;
+    }
+
+}
+
+
+@media(max-width:361px){
+
+
+
+ .home{
+
+    display: none;
+ }
+
+    .skills{
+
+        width:950px;
+        margin-bottom: 200px;
+    }
+
+    .projects{
+
+        display:none;
+      
+
+    }
+
+
+    .proj{
+
+        margin-top:500px ;
+        width: 950px;
+        display: none;
+    }
+ 
+
+    .certifications{
+        
+        margin-top: 990px;
+        width:950px;
+    
+    }
+
+    .certi0{
+
+        flex-direction: column;
+    }
+
+    .input-box{
+
+        width: 400px;
+    }
+    
+    .entermess{
+
+        width: 400px;
+    }
+
+    .contactus{
+
+        width: 950px;
+        margin-top: 700px;
+    }
+
+    .footer{
+
+        width: 1000px;
+    }
+
+    .aboutme{
+
+        margin-top: 200px;
+        display: none;
+    }
+
+
+
+
+}
