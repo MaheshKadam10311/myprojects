@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - "Your Weather, Your Way"</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="/weather_forecast_application/assets/icon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1); /* Slightly transparent whitish background */
+            backdrop-filter: blur(1px); /* Frosted glass effect */
+            border-radius: 0.5rem;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure video covers the entire screen */
+            z-index: -1; /* Make sure the video is behind other content */
+        }
+
+/* General Styles for Dropdown Menu */
+.recent-cities-dropdown {
+ 
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-size: 16px;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Adjust Dropdown for Small Screens */
+@media (max-width: 767.88px) {
+  .recent-cities-dropdown {
+   
+    width: 75%;
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 8px; /* Reduce padding */
+    text-align: center;
+  }
+}
+
+/* Adjust Dropdown for Extra Small Screens */
+@media (max-width: 375px) {
+  .recent-cities-dropdown {
+   
+    width: 190px;
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 8px; /* Reduce padding */
+    text-align: center;
+  }
+}
+
+/* Styles for Dropdown Options */
+.recent-cities-dropdown option {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* Hover Effect for Dropdown Options */
+.recent-cities-dropdown option:hover {
+  background-color: #34495e;
+}
+
+
+        
+    </style>
+</head>
+<body class="flex justify-center items-center box-border min-w-full min-h-screen m-0 bg-slate-700">
+    <video src="/weather_forecast_application/assets/bg-video.mp4" autoplay muted loop class="fixed"></video>
+    <div id="container" class="glass-effect p-6 w-11/12 max-w-5xl mt-8 mb-8 mr-10 ml-10" >
+       
+        <!-- Search Section -->
+       
+        <div class="flex flex-col md:flex-row items-center gap-4 mb-8">
+            <input type="text" placeholder="Enter City Name" class="flex-grow p-2 rounded-md  border border-gray-600 bg-gray-900 text-white max-md:w-3/4 max-md:text-center" />
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-600 transform transition-transform duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:translate-y-1 max-md:w-3/4">Search</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded-md shadow-sm hover:bg-green-600 transform transition-transform duration-300 hover:shadow-lg hover:shadow-green-500/50  text-center gap-2 hover:translate-y-1  max-md:w-3/4">
+                <i class="fas fa-location-arrow"></i> Current Location
+            </button>
+        </div>
+      
+               <!-- Weather Forecast Section -->
+              
+               <div class="flex flex-col mb-5 md:flex-row items-center justify-between gap-6">
+                <div class="flex-1 p-4 max-w-md">
+                    <h1 class="text-5xl text-white mb-6 max-sm:text-center" >Madrid</h1>
+                    <div class="flex items-center mb-4 text-lg">
+                        <i class="fas fa-temperature-high mr-2 text-white"></i>
+                        <strong class="text-white mr-2">Temperature :</strong>
+                        <span class="text-yellow-300">7.06 °C</span>
+                    </div>
+                    <div class="flex items-center mb-4 text-lg">
+                        <i class="fas fa-wind mr-2 text-white"></i>
+                        <strong class="text-white mr-2">Wind :</strong>
+                        <span class="text-blue-300">7.06 km/h</span>
+                    </div>
+                    <div class="flex items-center text-lg">
+                        <i class="fas fa-tint mr-2 text-white"></i>
+                        <strong class="text-white mr-2">Humidity :</strong>
+                        <span class="text-green-300">7.06 %</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 p-4 mr-12 text-center ">
+                    <img src="/weather_forecast_application/assets/cloudy.png" alt="Weather Icon" class="w-35 h-35 object-contain mb-5 ">
+                    <p class="text-white text-2xl font-bold">Clouds</p>
+                </div>
+            </div>
+      
+        <!-- 5 Days Forecast Section -->
+        
+        <div id="container2" class="bg-gray-900 p-5 rounded-xl">
+            <h1 class="text-2xl text-center text-white font-bold mb-5">5 Days Forecast</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+             
+               
+                <!-- Forecast Card 1 -->
+               
+                <div class="bg-gray-800 rounded-lg p-4 text-center cursor-pointer text-white transform transition-transform duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:-translate-y-2">
+                    <p class="text-lg font-semibold mb-4">2024-06-20</p>
+                    <img src="/weather_forecast_application/assets/windyy.png" alt="Weather Icon" class="w-16 h-16 mx-auto mb-4">
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-temperature-high mr-2"></i>
+                            Temperature:
+                        </p>
+                        <span class="text-yellow-300">27 °C</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-wind mr-2"></i>
+                            Wind:
+                        </p>
+                        <span class="text-blue-300">7.06 km/h</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-tint mr-2"></i>
+                            Humidity:
+                        </p>
+                        <span class="text-green-300">7.06 %</span>
+                    </div>
+                </div>
+
+                <!-- Forecast Card 2 -->
+               
+                <div class="bg-gray-800 rounded-lg p-4 text-center cursor-pointer text-white transform transition-transform duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:-translate-y-2">
+                    <p class="text-lg font-semibold mb-4">2024-06-21</p>
+                    <img src="/weather_forecast_application/assets/sunny.png" alt="Weather Icon" class="w-16 h-16 mx-auto mb-4">
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-temperature-high mr-2"></i>
+                            Temperature:
+                        </p>
+                        <span class="text-yellow-300">27 °C</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-wind mr-2"></i>
+                            Wind:
+                        </p>
+                        <span class="text-blue-300">7.06 km/h</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-tint mr-2"></i>
+                            Humidity:
+                        </p>
+                        <span class="text-green-300">7.06 %</span>
+                    </div>
+                </div>
+
+                <!-- Forecast Card 3 -->
+                
+                <div class="bg-gray-800 rounded-lg p-4 text-center cursor-pointer text-white transform transition-transform duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:-translate-y-2">
+                    <p class="text-lg font-semibold mb-4">2024-06-22</p>
+                    <img src="/weather_forecast_application/assets/stromy.png" alt="Weather Icon" class="w-16 h-16 mx-auto mb-4">
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-temperature-high mr-2"></i>
+                            Temperature:
+                        </p>
+                        <span class="text-yellow-300">27 °C</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-wind mr-2"></i>
+                            Wind:
+                        </p>
+                        <span class="text-blue-300">7.06 km/h</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-tint mr-2"></i>
+                            Humidity:
+                        </p>
+                        <span class="text-green-300">7.06 %</span>
+                    </div>
+                </div>
+
+                <!-- Forecast Card 4 -->
+                
+                <div class="bg-gray-800 rounded-lg p-4 text-center cursor-pointer text-white transform transition-transform duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:-translate-y-2">
+                    <p class="text-lg font-semibold mb-4">2024-06-23</p>
+                    <img src="/weather_forecast_application/assets/cloudy.png" alt="Weather Icon" class="w-16 h-16 mx-auto mb-4">
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-temperature-high mr-2"></i>
+                            Temperature:
+                        </p>
+                        <span class="text-yellow-300">27 °C</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-wind mr-2"></i>
+                            Wind:
+                        </p>
+                        <span class="text-blue-300">7.06 km/h</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-tint mr-2"></i>
+                            Humidity:
+                        </p>
+                        <span class="text-green-300">7.06 %</span>
+                    </div>
+                </div>
+
+                <!-- Forecast Card 5 -->
+                
+                <div class="bg-gray-800 rounded-lg p-4 text-center cursor-pointer text-white transform transition-transform duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:-translate-y-2">
+                    <p class="text-lg font-semibold mb-4">2024-06-24</p>
+                    <img src="/weather_forecast_application/assets/snowy.png" alt="Weather Icon" class="w-16 h-16 mx-auto mb-4">
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-temperature-high mr-2"></i>
+                            Temperature:
+                        </p>
+                        <span class="text-yellow-300">7 °C</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-wind mr-2"></i>
+                            Wind:
+                        </p>
+                        <span class="text-blue-300">7.06 km/h</span>
+                    </div>
+                    <div class="text-lg mt-2">
+                        <p class="flex items-center justify-center mb-1">
+                            <i class="fas fa-tint mr-2"></i>
+                            Humidity:
+                        </p>
+                        <span class="text-green-300">7.06 %</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
