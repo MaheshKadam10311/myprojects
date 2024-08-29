@@ -7,6 +7,7 @@ Key features include the ability to search for weather information by city name 
 
 This project employs advanced DOM manipulation techniques and asynchronous JavaScript to handle API requests and dynamically update the UI based on user input. By integrating these modern web development practices, SkyCast delivers fast and reliable weather data with a seamless user experience.
 
+* Hoisted Site (Netlify) : https://sky-cast-weather-forecast-application.netlify.app/  
 
 ## Features
 
