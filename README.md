@@ -14,7 +14,7 @@ MyProjects : Refer /myprojects repository
 
 3. My Portfolio Website - a creative frontend design of My Personal Portfolio Website created Using HTML and CSS. I made it to understand HTML and CSS in more detail it might not be up to the standard , it was a first step towards my learning process. (note : media queries are not added)
 
-   *Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app
+   * Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app
 
  5. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution.
 
