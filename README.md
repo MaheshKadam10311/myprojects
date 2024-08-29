@@ -6,12 +6,15 @@ Web Developer , Programmer
 
 Welcome to my Github profile , My journey in web development is driven by a belief that great things are built by combining innovative ideas with practical solutions with a passion for creativity and efficiency.
 
-MyProjects : Refer /myprojects repository 
+MyProjects : Refer /myprojects repository
 
-1. My Portfolio Website - a creative frontend design of My Personal Portfolio Website created Using HTML and CSS. I made it to understand HTML and CSS in more detail it might not be up to the standard , it was a first step towards my learning process. (note : media queries are not added)
+1. SkyCast( Weather Forecast Application ) - SkyCast is a responsive weather app using HTML, TailwindCSS, and JavaScript. Powered by the OpenWeather API, it provides real-time weather updates and a five-day forecast for any city or current location. The app features an intuitive interface and leverages DOM manipulation and asynchronous JavaScript for quick, seamless data updates.
+   Hoisted Site (Netlify): https://sky-cast-weather-forecast-application.netlify.app/
+
+2. My Portfolio Website - a creative frontend design of My Personal Portfolio Website created Using HTML and CSS. I made it to understand HTML and CSS in more detail it might not be up to the standard , it was a first step towards my learning process. (note : media queries are not added)
     Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app
 
- 2. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution.
+ 3. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution.
 
  4. Talk To Your Database - With The Help Of OpenAI Chat GPT and Telegram bot this project makes your communication with your database super easy.
 
