@@ -9,14 +9,16 @@ Welcome to my Github profile , My journey in web development is driven by a beli
 MyProjects : Refer /myprojects repository
 
 1. SkyCast( Weather Forecast Application ) - SkyCast is a responsive weather app using HTML, TailwindCSS, and JavaScript. Powered by the OpenWeather API, it provides real-time weather updates and a five-day forecast for any city or current location. The app features an intuitive interface and leverages DOM manipulation and asynchronous JavaScript for quick, seamless data updates.
-   Hoisted Site (Netlify): https://sky-cast-weather-forecast-application.netlify.app/
 
-2. My Portfolio Website - a creative frontend design of My Personal Portfolio Website created Using HTML and CSS. I made it to understand HTML and CSS in more detail it might not be up to the standard , it was a first step towards my learning process. (note : media queries are not added)
-    Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app
+   * Hoisted Site (Netlify): https://sky-cast-weather-forecast-application.netlify.app/
 
- 3. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution.
+3. My Portfolio Website - a creative frontend design of My Personal Portfolio Website created Using HTML and CSS. I made it to understand HTML and CSS in more detail it might not be up to the standard , it was a first step towards my learning process. (note : media queries are not added)
 
- 4. Talk To Your Database - With The Help Of OpenAI Chat GPT and Telegram bot this project makes your communication with your database super easy.
+   *Hoisted Site (Netlify) : https://myportfolio-maheshkadam.netlify.app
+
+ 5. Netflix Desktop Clone - A enhance frontend design of Netflix Official Website, with new design elements responsive for desktop resolution.
+
+ 6. Talk To Your Database - With The Help Of OpenAI Chat GPT and Telegram bot this project makes your communication with your database super easy.
 
 * 🌍  I'm based in India
 * ✉️  You can contact me at [maheshkadam10311@gmail.com](mailto:maheshkadam10311@gmail.com)
